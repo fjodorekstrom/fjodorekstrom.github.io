@@ -1,10 +1,10 @@
 'use strict';
-importScripts('./serviceworker-cache-polyfill.js');
+importScripts('serviceworker-cache-polyfill.js');
 // The files we want to cache
 var urlsToCache = [
     '/',
     '/styles/main.css',
-    '/script/script.js'
+    '/scripts/script.js'
 ];
 
 // Set the callback for the install step
