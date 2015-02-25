@@ -4,7 +4,8 @@ importScripts('scripts/serviceworker-cache-polyfill.js');
 var urlsToCache = [
     '/',
     '/styles/main.css',
-    '/scripts/script.js'
+    '/scripts/script.js',
+    '/scripts/serviceworker-cache-polyfill.js'
 ];
 
 // Set the callback for the install step
