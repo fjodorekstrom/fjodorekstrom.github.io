@@ -3,7 +3,7 @@ importScripts('scripts/serviceworker-cache-polyfill.js');
 // The files we want to cache
 var urlsToCache = [
     '/',
-    '/styles/main.css',
+   // '/styles/main.css',
     '/scripts/script.js',
     '/scripts/serviceworker-cache-polyfill.js'
 ];
