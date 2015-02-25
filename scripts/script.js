@@ -1,9 +1,9 @@
 'use strict';
-var worker = new Worker('task.js');
-worker.postMessage();
-importScripts('./serviceworker-cache-polyfill.js');
+
+
 
 if ('serviceWorker' in navigator) {
+    importScripts('./serviceworker-cache-polyfill.js');
     navigator.serviceWorker.register('/sw.js').then(function(registration) {
         // Registration was successful
         console.log('ServiceWorker registration successful with scope: ',    registration.scope);
