@@ -1,10 +1,10 @@
 'use strict';
-var worker = new Worker('/sw.js');
+var worker = new Worker('scripts/sw.js');
 worker.postMessage();
 importScripts('./serviceworker-cache-polyfill.js');
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    navigator.serviceWorker.register('scripts/sw.js').then(function(registration) {
         // Registration was successful
         console.log('ServiceWorker registration successful with scope: ',    registration.scope);
     }).catch(function(err) {
