@@ -1,5 +1,5 @@
 'use strict';
-importScripts('scripts/serviceworker-cache-polyfill.js');
+importScripts('./serviceworker-cache-polyfill.js');
 // The files we want to cache
 var urlsToCache = [
     '/',
